@@ -1,0 +1,12 @@
+{
+  "name": "05_ts_generics_bendriniai_tipai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
