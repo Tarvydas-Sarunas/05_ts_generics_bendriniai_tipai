@@ -37,3 +37,15 @@ function getTupleFromValues<Type1, Type2>(x: Type1, y: Type2): [Type1, Type2] {
 const t1 = getTupleFromValues('blue', 300);
 const t2 = getTupleFromValues(50, '300');
 t2[1].toUpperCase();
+
+// function kuri priima sk arba str masyva
+// skaiciu masyva padauginam is 2
+// stringu masyve padarom UperCase
+
+function processArr<ElType>(arr: ElType[]): ElType[] {
+  return [...arr];
+}
+
+// processArr([1, 2, 3, 'green']); //noretumeme gauti kad visi masyvo el butu vieno tipo
+const skArr = processArr([1, 2, 3]);
+const stringArr = processArr(['red', 'green', 'blue']);

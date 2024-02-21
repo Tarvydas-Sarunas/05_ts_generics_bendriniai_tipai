@@ -14,4 +14,9 @@ function getTupleFromValues(x, y) {
 const t1 = getTupleFromValues('blue', 300);
 const t2 = getTupleFromValues(50, '300');
 t2[1].toUpperCase();
+function processArr(arr) {
+    return [...arr];
+}
+const skArr = processArr([1, 2, 3]);
+const stringArr = processArr(['red', 'green', 'blue']);
 //# sourceMappingURL=generics.js.map
