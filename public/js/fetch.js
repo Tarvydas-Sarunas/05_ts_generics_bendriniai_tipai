@@ -15,6 +15,21 @@ function getPost(url) {
         console.warn('ivyko klaida:', error);
     });
 }
+async function needAwait() {
+    const gotObj = getPost(urlPosts);
+    console.log('gotObj ===', gotObj);
+    if (!Array.isArray(gotObj)) {
+        console.log('gotObj ===', gotObj);
+    }
+}
+needAwait();
+async function needAwait2() {
+    const gotObj = getPost(urlPosts);
+    console.log('gotObj ===', gotObj);
+    const gotAllPost = getPost(allPostsUrl);
+    console.log('gotAllPost ===', gotAllPost);
+}
+needAwait2();
 getPost(urlPosts).then((dataBack) => console.log('dataBack ===', dataBack));
 getPost(allPostsUrl).then((dataAllPostBack) => console.log('dataAllPostBack ===', dataAllPostBack));
 //# sourceMappingURL=fetch.js.map
